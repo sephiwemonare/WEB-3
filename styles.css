@@ -1,0 +1,133 @@
+/* General styles */
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Login, Register, and Dashboard container styles */
+.login-container, 
+.register-container,
+.dashboard-container {
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #bfbca7;
+    box-shadow: rgb(28, 4, 182);
+    border-radius: 8px;
+    margin: 0;
+}
+
+h2, h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #dbd9cb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #4277ea;
+    color: #d6cfc3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b5b3a0;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+li button {
+    background-color: #d1c3c2;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: #a7a09f;
+}
+
+/* Media Queries for Different Screen Sizes */
+@media (max-width: 768px) {
+    /* Adjust container width for tablets and smaller screens */
+    .login-container, 
+    .register-container,
+    .dashboard-container {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for mobile screens */
+    .login-container, 
+    .register-container,
+    .dashboard-container {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
